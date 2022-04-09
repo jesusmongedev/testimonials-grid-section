@@ -1,0 +1,14 @@
+@use '../abstracts' as *;
+
+.attribution {
+  margin: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  font-size: $text-sm;
+  & a {
+    text-decoration: none;
+    color: $moderate-violet;
+  }
+}

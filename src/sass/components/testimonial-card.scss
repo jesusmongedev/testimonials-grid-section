@@ -39,34 +39,6 @@
       color: $dark-quote-color;
     }
   }
-  // @media screen and (min-width: 768px) {
-  //   &--violet {
-  //     grid-column: 1 / 5;
-  //   }
-  //   &--grayish {
-  //     grid-column: span 2;
-  //   }
-  //   &--blackish {
-  //     grid-column: span 4;
-  //   }
-  //   &--tablet {
-  //     grid-column: span 2;
-  //   }
-  //   &--alignment {
-  //     grid-column: span 4;
-  //   }
-  // }
-  @media screen and (min-width: 1280px) {
-    &--violet {
-      grid-column: 1 / 3;
-    }
-    &--blackish {
-      grid-column: span 2;
-    }
-    &--alignment {
-      grid-area: 1 / 4 / 3 / 5;
-    }
-  }
 }
 
 .info-container {
