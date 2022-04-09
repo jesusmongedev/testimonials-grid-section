@@ -19,7 +19,7 @@
     "build": "npm-run-all copy:html build:*",
     "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d public"
   },
   "dependencies": {
     "autoprefixer": "^10.4.2",
