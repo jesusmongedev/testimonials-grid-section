@@ -4,6 +4,7 @@
   "description": "SASS compile|autoprefix|minimize and live-reload dev server using Browsersync for static HTML",
   "main": "public/index.html",
   "author": "5t3ph",
+  "homepage": "https://jesusmongedev.github.io/testimonials-grid-section/",
   "scripts": {
     "build:sass": "sass  --no-source-map src/sass:public/css",
     "copy:html": "copyfiles -u 1 ./src/*.html public",
@@ -16,7 +17,9 @@
     "serve": "browser-sync start --server public --files public",
     "start": "npm-run-all copy --parallel watch serve",
     "build": "npm-run-all copy:html build:*",
-    "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map"
+    "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "autoprefixer": "^10.4.2",
@@ -27,5 +30,8 @@
     "onchange": "^7.1.0",
     "postcss-cli": "^9.1.0",
     "sass": "^1.49.8"
+  },
+  "devDependencies": {
+    "gh-pages": "^3.2.3"
   }
 }

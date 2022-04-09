@@ -1,0 +1,25 @@
+@use './abstracts/' as *;
+
+body {
+  font-size: $text-md;
+}
+
+.grid-container {
+  margin: 8rem 0;
+  gap: 4rem;
+}
+
+.user-card__review {
+  font-size: $text-2xl;
+}
+
+.info-container__avatar {
+  width: 5rem;
+}
+.info-container-data__name {
+  font-size: $text-lg;
+}
+
+.quotation-svg {
+  width: 13.5rem;
+}
