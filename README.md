@@ -26,7 +26,7 @@ Users should be able to:
 
 ### Screenshot
 
-![JMongeDev-Challenge's-Solution](./images/jesusmongedev.github.io_testimonials-grid-section_.png)
+![JMongeDev-Challenge's-Solution](./public/images/jesusmongedev.github.io_testimonials-grid-section_.png)
 
 ### Links
 
