@@ -2,15 +2,15 @@
 
 .user-card {
   padding: 3rem;
-  display: flex;
-  gap: $flex-gap;
-  flex-direction: column;
-  color: $light-gray;
+  color: $white;
   border-radius: $bd-radius;
   box-shadow: $shadow-md;
   &--violet {
-    position: relative;
     background-color: $moderate-violet;
+    background-image: url(../../images/bg-pattern-quotation.svg);
+    background-repeat: no-repeat;
+    background-position: right 10% top 0;
+    background-size: 11rem;
   }
   &--grayish {
     background-color: $very-dark-grayish-blue;
@@ -26,6 +26,7 @@
     font-size: $text-xl;
     font-weight: $font-semibold;
     color: $light-grayish-blue;
+    margin-bottom: 1.6rem;
     z-index: 1;
     &--dark {
       color: $very-dark-blackish-blue;
@@ -45,28 +46,25 @@
   display: flex;
   align-items: center;
   gap: $flex-gap;
+  margin-bottom: 1.6rem;
   &__avatar {
-    width: 4rem;
+    width: 4.25rem;
     border-radius: 50%;
-    border: 3px solid $verified-color;
+    border: 2px solid $dark-verified-color;
+    &--bd-color {
+      border-color: $verified-color;
+    }
     &--dark-border {
-      border-color: $light-gray;
+      border-color: $moderate-violet;
     }
   }
   &-data__name {
     font-size: $text-md;
   }
   &-data__status {
-    color: $verified-color;
+    color: $light-gray;
     &--dark {
-      color: $dark-verified-color;
+      color: $dark-quote-color;
     }
   }
-}
-
-.quotation-svg {
-  width: 11rem;
-  position: absolute;
-  top: 0;
-  right: 2.25rem;
 }

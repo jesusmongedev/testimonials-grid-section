@@ -1,1 +1,44 @@
-*,:after,:before{box-sizing:border-box;margin:0;padding:0}html{font-family:Barlow Semi Condensed,sans-serif;font-size:62.5%}body{background-color:#ecf2f8;font-size:1.4rem}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Barlow Semi Condensed", sans-serif;
+}
+
+body {
+  display: flex;
+  padding-bottom: 1rem;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  font-size: 1.3rem;
+  background-color: hsl(210deg, 46%, 95%);
+}
+
+main {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 0;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  white-space: nowrap;
+}

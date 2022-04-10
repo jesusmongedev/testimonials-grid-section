@@ -1,15 +1,15 @@
 .user-card {
   padding: 3rem;
-  display: flex;
-  gap: 1.5rem;
-  flex-direction: column;
-  color: hsl(0deg, 0%, 81%);
+  color: hsl(0deg, 0%, 100%);
   border-radius: 1rem;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  box-shadow: 1rem 1rem 8rem -1rem #cfcfcf;
 }
 .user-card--violet {
-  position: relative;
   background-color: hsl(263deg, 55%, 52%);
+  background-image: url(../../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: right 10% top 0;
+  background-size: 11rem;
 }
 .user-card--grayish {
   background-color: hsl(217deg, 19%, 35%);
@@ -22,9 +22,10 @@
   background-color: hsl(219deg, 29%, 14%);
 }
 .user-card__review {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 600;
   color: hsl(210deg, 46%, 95%);
+  margin-bottom: 1.6rem;
   z-index: 1;
 }
 .user-card__review--dark {
@@ -33,38 +34,35 @@
 .user-card__quote {
   font-weight: 600;
   line-height: 2rem;
-  color: hsla(0deg, 0%, 81%, 0.7);
+  color: hsl(0deg, 0%, 79%);
 }
 .user-card__quote--dark {
-  color: hsla(217deg, 19%, 35%, 0.7);
+  color: hsl(217deg, 19%, 35%);
 }
 
 .info-container {
   display: flex;
   align-items: center;
   gap: 1.5rem;
+  margin-bottom: 1.6rem;
 }
 .info-container__avatar {
-  width: 4rem;
+  width: 4.25rem;
   border-radius: 50%;
-  border: 3px solid hsla(0deg, 0%, 81%, 0.5);
+  border: 2px solid hsla(217deg, 19%, 35%, 0.5);
+}
+.info-container__avatar--bd-color {
+  border-color: hsla(0deg, 0%, 81%, 0.5);
 }
 .info-container__avatar--dark-border {
-  border-color: hsl(0deg, 0%, 81%);
+  border-color: hsl(263deg, 55%, 52%);
 }
 .info-container-data__name {
   font-size: 1.6rem;
 }
 .info-container-data__status {
-  color: hsla(0deg, 0%, 81%, 0.5);
+  color: hsl(0deg, 0%, 81%);
 }
 .info-container-data__status--dark {
-  color: hsla(217deg, 19%, 35%, 0.5);
-}
-
-.quotation-svg {
-  width: 11rem;
-  position: absolute;
-  top: 0;
-  right: 2.25rem;
+  color: hsl(217deg, 19%, 35%);
 }

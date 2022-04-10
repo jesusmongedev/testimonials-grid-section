@@ -1,1 +1,23 @@
-.grid-container{grid-template-columns:repeat(4,27rem)}.user-card{padding:4rem}.user-card--violet{grid-column:1/3}.user-card--blackish{grid-column:span 2}.user-card--alignment{grid-area:1/4/3/5}.attribution{font-size:1.6rem}
+.grid-container {
+  grid-template-columns: repeat(4, 27.75rem);
+}
+
+.user-card {
+  padding: 3.2rem;
+  gap: 2.25rem;
+}
+.user-card--violet {
+  background-position: right 20% top 0;
+  background-size: 13rem;
+  grid-column: 1/3;
+}
+.user-card--blackish {
+  grid-column: span 2;
+}
+.user-card--alignment {
+  grid-area: 1/4/3/5;
+}
+
+.attribution {
+  font-size: 1.6rem;
+}
