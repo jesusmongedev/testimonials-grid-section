@@ -1,5 +1,4 @@
 .grid-container {
-  margin: 4rem 0;
   display: grid;
   grid-template-columns: 85%;
   gap: 3rem;
